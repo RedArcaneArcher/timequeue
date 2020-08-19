@@ -88,6 +88,16 @@ func (q Queue) Events() []Event {
 	return e[:n]
 }
 
+//Clear resets the queue to zero events.
+func (q *Queue) Clear() {
+	for i := range q.events {
+		q.events[i] = Event{}
+	}
+	q.start = 0
+	q.end = 0
+	q.length = 0
+}
+
 func (q *Queue) expand() {
 	if len(q.events) == 0 {
 		q.events = make([]Event, initsize)
