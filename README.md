@@ -1,7 +1,7 @@
 # Time Queue
 Time queue system for turn based games. Events are sorted by time as they enter the queue, and their time is decreased as other events are removed from the queue.
 
-Based on the rogue basin article [A priority queue based turn scheduling system](http://www.roguebasin.com/index.php?title=A_priority_queue_based_turn_scheduling_system)
+Based on the rogue basin article [A priority queue based turn scheduling system](http://www.roguebasin.com/index.php?title=A_priority_queue_based_turn_scheduling_system).
 
 ## Install
 
@@ -26,8 +26,8 @@ for {
 }
 ```
 
+#### Output:
 ```
-Output:
 ID: 2, Delta: 1, Data: defend
 ID: 1, Delta: 2.3, Data: attack
 ID: 3, Delta: 1.2, Data: rest
